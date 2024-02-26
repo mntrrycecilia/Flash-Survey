@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ survey.title }}</h1>
+<p>
+
+  {{ survey.instructiuons}}
+
+</p>
+<form action="/begin" method="POST">
+  <button>Enter</button>
+</form>
+{% endblock %}
